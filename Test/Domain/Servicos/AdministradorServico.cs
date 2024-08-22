@@ -61,7 +61,7 @@ public class AdministradorServicoTest
         admServico.Incluir(adm);
         var admResult = admServico.BuscarPorId(adm.Id);
         //Assert
-        Assert.AreEqual(1, admResult.Id);
+        Assert.AreEqual(1, admResult?.Id);
 
     }
 }
